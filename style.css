@@ -1,0 +1,88 @@
+#controlPanel {
+    margin-bottom: 20px;
+}
+
+#coursesList {
+    float: left;
+    width: 200px;
+    border: 1px solid #0f0f10; /* Changed border color */
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#totalRooms, #classDuration, #breakTime, #totalDays {
+    width: 120px; /* Adjust the width as needed */
+}
+
+.course {
+    padding: 5px;
+    border: 1px solid #0d0b0b; /* Changed border color */
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #eeeeee; /* Changed background color */
+}
+
+#generateTimetable, #saveTimetable {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#generateTimetable:hover, #saveTimetable:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+#timetableContainer {
+    overflow: auto;
+}
+
+.timetable {
+    border-collapse: collapse;
+    margin-top: 20px; /* Added margin to separate timetable from the control panel */
+}
+
+.timetable td, .timetable th {
+    border: 1px solid #555555; /* Changed border color */
+    padding: 5px;
+    min-width: 100px;
+    height: 50px;
+    background-color: #ffffff; /* Changed background color */
+}
+
+.day-tab {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #dddddd; /* Changed border color */
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #f0f0f0; /* Changed background color */
+}
+
+.break-time {
+    display: none; /* Hide breaks */
+}
+
+#coursesHeading {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-left: 20px; /* Adjust the margin-left value as needed */
+}
+
+h1 {
+    margin-left: 480px;
+    padding: 10px;
+    border: 3px solid #000;
+    display: inline-block;
+}
+
+#totalRooms, #classDuration, #breakTime, #totalDays {
+    width: 350px; /* Adjust the width as needed */
+}
+
+
+

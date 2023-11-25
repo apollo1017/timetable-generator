@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated University Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4c5caf;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            font-size: 2em;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        #controlPanel {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #coursesHeading {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #4c5caf;
+        }
+
+        #generateTimetable,
+        #saveTimetable {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4c5caf;
+            color: white;
+            border: none;
+            border-radius: 11px;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        #generateTimetable:hover,
+        #saveTimetable:hover {
+            background-color: #5d45a0;
+        }
+
+        #generateTimetable {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Automated University Timetable
+    </header>
+
+    <div id="controlPanel">
+        <input type="number" id="totalRooms" placeholder="Total Rooms" value="10" />
+        <input type="number" id="classDuration" placeholder="Class Duration (mins)" value="80" />
+        <input type="number" id="breakTime" placeholder="Break Time (mins)" value="10" />
+        <input type="number" id="totalDays" placeholder="Total Days" value="5" />
+        <input type="time" id="startTime" placeholder="Start Time" value="08:30" />
+        <input type="time" id="endTime" placeholder="End Time" value="17:15" />
+        <button id="generateTimetable">Generate Timetable</button>
+        <button id="saveTimetable">Save Timetable</button>
+    </div>
+
+    <div id="coursesList">
+        <div id="coursesHeading">Courses List</div>
+        <!-- Courses will be added here via JavaScript -->
+    </div>
+
+    <div id="timetableContainer">
+        <!-- Timetable will be generated here -->
+    </div>
+</body>
+
+</html>
