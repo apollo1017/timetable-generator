@@ -1,10 +1,14 @@
 # Automated Timetable Generator
 
 ## Project Overview
-The **Automated Timetable Generator** is an intelligent scheduling tool designed to streamline course scheduling for academic institutions. It ensures clash-free timetable creation by providing an interactive drag-and-drop interface for administrators to assign courses to available timeslots. The system proactively detects scheduling conflicts for students and instructors, reducing administrative workload and improving scheduling efficiency.
+The **Automated Timetable Generator** is an intelligent scheduling tool initially designed to streamline course scheduling for FAST-NUCES, Islamabad Campus. It ensures clash-free timetable creation by providing an interactive drag-and-drop interface for administrators to assign courses to available timeslots. The system proactively detects scheduling conflicts for students and instructors, reducing administrative workload and improving scheduling efficiency. While the system is currently tailored for FAST-NUCES, it can be further enhanced and adapted for other academic institutions with similar scheduling needs.
 
 ## Problem Statement
 Manually generating a timetable for a university is a time-consuming and error-prone process. Coordinators must ensure that no student or instructor has overlapping classes while also managing room availability and course assignments. The process often leads to inefficiencies, last-minute adjustments, and scheduling conflicts, affecting students' learning experience and faculty workload.
+
+Moreover, when conflicts arise—such as overlapping courses, unavailable instructors, or room allocation issues—students are often required to go through lengthy bureaucratic processes to request changes. This typically involves waiting in long queues, filling out request forms, and repeatedly following up with administrators to get their schedules adjusted. Such inefficiencies not only add to administrative burdens but also cause frustration among students and faculty, delaying their ability to finalize academic plans.
+
+An automated system that proactively prevents conflicts and allows seamless adjustments can significantly improve the scheduling process, reducing unnecessary delays and enhancing the overall academic experience.
 
 ## Target Audience
 - **University administrators** responsible for scheduling courses.
