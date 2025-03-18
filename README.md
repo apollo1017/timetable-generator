@@ -85,7 +85,7 @@ Follow these steps to set up and run the **Automated Timetable Generator** on yo
 
 ### 1️. Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/automated-timetable-generator.git
+git clone https://github.com/imamaaa/automated-timetable-generator.git
 cd automated-timetable-generator
 ```
 ### 2. Install Dependencies
@@ -94,24 +94,29 @@ cd automated-timetable-generator
 pip install -r requirements.txt
 ```
 
-### 3. Set Up the Database
-The system requires a database to store courses, instructors, and timetable data. Follow these steps to set it up:
-- Create a new database in MySQL/PostgreSQL (depending on your setup).
-- Run the SQL script to set up the necessary tables and initial data:
-```bash
-mysql -u your_username -p your_database_name < database/setup.sql
+### 3. Set Up the Database  
+The system requires a **Microsoft SQL Server** database to store courses, instructors, and timetable data. Follow these steps to set it up:  
+
+- Create a new **Microsoft SQL Server** database.  
+- Run the SQL script to set up the necessary tables and initial data:  
+
+```sql
+sqlcmd -S your_server_name -U your_username -P your_password -d your_database_name -i database/setup.sql
+
 ```
-_(Replace your_username and your_database_name with your actual database credentials.)_
+_(Replace your_server_name, your_username, your_password, and your_database_name with your actual database credentials.)_
 
 ### 4️. Configure Environment Variables  
 The system requires a `.env` file for **database connectivity**. Create a `.env` file in the project root and configure it as follows:  
 
 ```ini
-DB_HOST=your_database_host
+DB_SERVER=your_server_name
 DB_PORT=your_database_port
 DB_NAME=your_database_name
 DB_USER=your_database_username
 DB_PASSWORD=your_database_password
+DB_DRIVER={ODBC Driver 17 for SQL Server}
+
 ```
 _Make sure to replace the placeholders with your actual database credentials._
 
